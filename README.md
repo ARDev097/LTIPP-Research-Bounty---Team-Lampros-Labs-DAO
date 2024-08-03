@@ -46,7 +46,7 @@ The current datasets are up-to-date as of the latest available date. Remaining d
   - Protocols that have not yet utilized the grants they have received 🕒
 
 ## Contact 📲
-For any queries regarding the datasets or further information, feel free to connect on Telegram @Chain_L.
+The current dataset contains limited columns than we have access to on Dune as these are the necessary data points for our analysis. For additional dataset around what we have, feel free to connect on Telegram @Chain_L for any queries.
 
 ## Usage 📚
 Researchers and analysts can use the provided datasets to:
