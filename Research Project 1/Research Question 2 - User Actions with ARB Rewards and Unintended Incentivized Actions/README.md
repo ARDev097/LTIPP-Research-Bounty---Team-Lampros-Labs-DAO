@@ -1,4 +1,4 @@
-# User Actions with ARB Rewards and Unintended Incentivized Actions
+# User Actions with ARB Rewards and Unintended Incentivized Actions Dataset
 
 ## Overview
 This dataset has been compiled to investigate how users utilize ARB rewards received from various protocols and their subsequent actions. It aims to track the flow of ARB rewards, categorize actions such as selling, reinvesting, or adding to liquidity pools, and analyze behavior by protocol cohorts. The dataset also focuses on identifying any unintended incentivized actions resulting from the current incentive programs and proposing adjustments to mitigate such behaviors.
