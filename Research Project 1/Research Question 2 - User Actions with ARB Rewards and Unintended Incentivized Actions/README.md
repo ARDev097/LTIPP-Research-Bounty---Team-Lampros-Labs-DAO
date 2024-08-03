@@ -1,7 +1,7 @@
 # User Actions with ARB Rewards and Unintended Incentivized Actions Dataset
 
 ## Overview
-This dataset has been compiled to investigate how users utilize ARB rewards received from various protocols and their subsequent actions. It aims to track the flow of ARB rewards, categorize actions such as selling, reinvesting, or adding to liquidity pools, and analyze behavior by protocol cohorts. The dataset also focuses on identifying any unintended incentivized actions resulting from the current incentive programs and proposing adjustments to mitigate such behaviors.
+This dataset has been compiled to investigate how users utilize ARB rewards received from various protocols and their subsequent actions. It aims to track the flow of ARB rewards, categorize actions such as selling, reinvesting, or adding to liquidity pools, and analyze behavior by protocol cohorts. The dataset also focuses on identifying any unintended incentivized actions resulting from the current incentive programs and proposing adjustments to mitigate such behaviors.The current dataset contains data up to the latest date, and the remaining data will be updated by the end of September. Additionally, the dataset contains a limited number of columns from Dune as these are the necessary data points for our analysis.
 
 ## Dataset Structure
 The dataset is organized into two parts:
@@ -73,9 +73,16 @@ The dataset is organized into two parts:
 
 ## Data Source
 The data was collected using queries on Dune Analytics. The process involved:
-1. **Identifying ARB Reward Distributing Addresses**: Tracking token flow on Arbiscan and verifying distributor addresses from the ARBgrant website.
-2. **Writing Queries for Reward Distribution**: Using distributor addresses and Dune Analytics tables to collect transaction data of ARB reward recipients.
-3. **Writing Queries for Subsequent Transactions**: Collecting data on subsequent transactions of ARB tokens using recipient addresses and Dune Analytics tables.
+
+1. **Identifying ARB Reward Distributing Addresses**: 
+   - **Compiled Funding Addresses**: Gathered the list of funding addresses from the proposals of different protocols participating in LTIPP.
+   - **Traced Arbitrum Flow**: Used Arbiscan to trace the transaction flows of these funding addresses on the Arbitrum network. Looked for any addresses involved in these transactions that might be associated with distribution activities.
+   - **Identified Potential Distribution Contracts**: Analyzed the transaction flows to identify addresses that handle large volumes of transactions or exhibit distribution patterns. Focused on addresses that distribute funds or tokens to multiple recipients, as these are likely to be distribution contracts.
+   - **Cross-Checked Addresses**: Cross-referenced the potential distribution addresses with the contract addresses listed on the Arbitrum Grants website.
+
+2. **Writing Queries for Reward Distribution**: Using the distributor addresses and relevant data tables from Dune Analytics, we collected transaction data of ARB reward recipients.
+
+3. **Writing Queries for Further Transactions**: Using the list of recipients from the reward data and relevant tables from Dune Analytics, we collected data on further transactions of the ARB tokens.
 
 ## Metrics for Analysis
 
@@ -95,3 +102,6 @@ Researchers and analysts can use this dataset to:
 - Examine the utilization of ARB rewards and understand user behavior.
 - Evaluate the effectiveness of incentive programs and identify unintended consequences.
 - Propose improvements to optimize incentive program design and user engagement.
+
+## Additional Information
+For this research question, data has been collected for around 62 protocols. However, there are some protocols that have not received grants yet, some that have not started utilizing their received grants, and a few for which we are still clarifying certain details. We are currently working on the data collection for these protocols and will update the dataset shortly.
