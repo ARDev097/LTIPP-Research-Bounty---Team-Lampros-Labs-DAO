@@ -1,7 +1,7 @@
 # Research Project 1
 
 ## Overview
-Research Project 1 focuses on analyzing various aspects of incentive systems within the Arbitrum ecosystem. The project aims to assess sector growth, user interaction, and incentive effectiveness, investigate user actions with ARB rewards, explore funding mechanisms, and evaluate high-velocity incentive systems. 
+Research Project 1 focuses on Comprehensive Analysis of Incentive Program Effectiveness and Value Generation for LTIPP Participating Protocols on Arbitrum. The project aims to assess sector growth, user interaction, and incentive effectiveness, investigate user actions with ARB rewards, explore funding mechanisms, and evaluate high-velocity incentive systems. 
 
 ## Folder Structure
 The project is organized into folders corresponding to each research question, with specific datasets files within each folder:
